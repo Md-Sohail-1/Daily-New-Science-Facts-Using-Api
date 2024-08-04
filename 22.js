@@ -193,5 +193,12 @@ console.log(data.media_type == "video")
 load();
 //console.log(data)
 
+window.onload = function (){
+  setTimeout(()=>{
+  document.querySelector(".loader").style ="display:none;";
+  document.querySelector("#main").style ="display:block;";
+  },800)
+}
+
 
 
