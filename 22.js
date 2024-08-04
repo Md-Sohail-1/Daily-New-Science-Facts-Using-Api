@@ -173,6 +173,7 @@ let response = await fetching.json();
 let data =await response;
   console.log(data);
   if(data.media_type == "image"){
+    img_container1.style="display:block;height:300px; width:100%; border:10px double white;"
     img_container2.style="display:none;"
     img.src = data.url;
   }
